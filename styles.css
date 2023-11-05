@@ -1,0 +1,67 @@
+body {
+    background: lightgrey;
+    display: flex;
+    margin: 0; 
+    padding: 0;
+    flex-direction: column;
+}
+.header {
+    width: 100%;
+    background: rgb(104, 3, 145);
+    z-index: 10;
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Orbitron";
+    color: rgb(92, 212, 252);
+}
+.generator {
+    width: 700px;
+    background: yellow;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+}
+.instructions {
+    font-size: 33px;
+    margin-bottom: 0;
+    text-align: center;
+    font-family: "Griffy";
+    font-weight: bold;
+}
+#idExcuse{
+    text-align: center;
+    font-size: 25px;
+}
+.pressMe {
+    background: orange;
+    border-radius: 5px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+@media (max-width: 700px) { /*Establecemos diferentes propiedades para cuando la pantalla se reduzca de los 1100 píxeles de anchura, así también lo hacemos friendly para otros dispositivos*/
+    body{
+     overflow-x:hidden; /*Eliminamos el scrollbar inferior, para que no se desplace la página de izquiera a derecha o viceversa*/
+    }
+    h1{
+        font-size: 25px;
+    }
+    .generator {
+        width: 100%;
+        top: 50px;
+        padding-bottom: 15px;
+    }
+    .instructions {
+        font-size: 20px;
+    }
+    #idExcuse {
+        font-size: 15px;
+    }
+}

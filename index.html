@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/favicon.ico"/> <!--Icono Título o pestaña-->
+		<title>Thragull-Excuses</title> <!--Nombre título-->
+		<link 
+			href="https://fonts.googleapis.com/css2?family=Griffy:wght@300;400;500;600;700;800&family=Source+Code+Pro:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/> <!--Enlazamos Fuente Handlee-->
+		<link 
+			href="https://fonts.googleapis.com/css2?family=Orbitron:wght@300;400;500;600;700;800&family=Source+Code+Pro:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<!--Enlazamos el estilo CSS-->
+		<script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+		<!--Enlazamos Font Awesome para añadir iconos posteriormente-->
+		<script type="text/javascript" src="excuses.js"></script>
+    </head>
+    <body onload="alert('Completada la carga de la página')">
+		<div class="header">
+        	<h1>Excuses Generator</h1>
+		</div>
+		<div class="generator">
+			<p class="instructions">Press the button below to generate an excuse:</p>
+        	<p id="idExcuse">My dog eat my homework</p>
+			<button class="pressMe" onclick="document.getElementById('idExcuse').innerHTML=excuse()">Press Me</button>
+		</div>
+	</body>
+</html>
